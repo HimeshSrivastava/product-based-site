@@ -18,6 +18,19 @@ export const products = [
   
   
  
-  export const userCarts = new Map(); 
+  
+  export const userCarts = new Map();
 
+ export const store = {
+    user:[],
+    orders: [], 
+    discountCodes: [], 
+    stats: {
+      itemsSold: 0,
+      totalAmount: 0,
+      discountAmount: 0
+    },
+    N: 3, 
+    orderCount: 0
+  }
   

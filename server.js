@@ -4,9 +4,11 @@ const app=express();
 
 app.use(express.json());
 
-import cartRoutes from './routes/cartRoutes.js'
+import cartRoutes from './routes/cart.routes.js'
+import checkoutRoutes from './routes/checkout.routes.js'
 
 app.use("/api/cart", cartRoutes);
+app.use("/api/cart", checkoutRoutes);
 
 app.get("/",(req,res)=>{
     res.send("hii")
